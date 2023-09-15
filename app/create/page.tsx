@@ -10,8 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-import groupGenerator from "@/components/groupGenerator";
-import Header from "@/components/header";
+import GroupGenerator from "@/components/groupGenerator";
 
 export default async function create() {
   // This page will contain behavior to join a group
@@ -32,7 +31,7 @@ export default async function create() {
             <Separator className="py-1 w-[175px] " />
           </CardHeader>
           <CardContent className="text-center flex flex-col space-y-12 py-12">
-            <Header />
+            <GroupGenerator />
           </CardContent>
         </Card>
       </div>
