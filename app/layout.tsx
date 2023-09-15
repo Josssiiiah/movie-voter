@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Header from "@/components/groupGenerator";
+import Header from "@/components/GroupGenerator";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";

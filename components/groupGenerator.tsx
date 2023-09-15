@@ -14,7 +14,7 @@ const handleClick = async (setRandomString: any) => {
   setRandomString(randomString);
 };
 
-const groupGenerator = () => {
+const GroupGenerator = () => {
   const [randomString, setRandomString] = useState("");
 
   // const generateRandomString = () => {
@@ -44,4 +44,4 @@ const groupGenerator = () => {
   );
 };
 
-export default groupGenerator;
+export default GroupGenerator;
