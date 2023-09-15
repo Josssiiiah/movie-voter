@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-const Header = () => {
+const groupGenerator = () => {
   const [randomString, setRandomString] = useState("");
 
   const generateRandomString = () => {
@@ -19,14 +19,15 @@ const Header = () => {
 
   return (
     <>
-      <div className="items-center text-cen">
-        <h1 className="text-black">{randomString}</h1>
+      <div className="items-center justify-center flex">
+        <h1>Group Generator</h1>
         <Button onClick={generateRandomString} className="mx-auto">
           Create
         </Button>
+        <p>{randomString}</p>
       </div>
     </>
   );
 };
 
-export default Header;
+export default groupGenerator;
