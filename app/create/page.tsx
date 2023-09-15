@@ -20,7 +20,7 @@ export default async function create() {
     <div>
       <div className="flex min-h-screen flex-col p-24">
         <Link href="/">
-          <Button variant="default" className="left-10 top-10 fixed">
+          <Button variant="default" className="left-10 top-6 fixed">
             Back
           </Button>
         </Link>

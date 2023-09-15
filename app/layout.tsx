@@ -1,8 +1,9 @@
 import "../styles/globals.css";
-import Header from "@/components/GroupGenerator";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs/app-beta";
+import Nav from "@/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto_Slab({ weight: "400", subsets: ["latin"] });
@@ -20,7 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={roboto.className}>
       <body className="flex h-full flex-col bg-zinc-400">
-        <main>{children}</main>
+        <ClerkProvider>
+          <Nav />
+          <main>{children}</main>
+        </ClerkProvider>
       </body>
     </html>
   );
