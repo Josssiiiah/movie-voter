@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-import GroupGenerator from "@/components/GroupGenerator";
+import GroupGenerator from "../GroupGenerator";
 
 export default async function create() {
   // This page will contain behavior to join a group
