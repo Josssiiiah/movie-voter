@@ -1,9 +1,6 @@
 import { kv } from "@vercel/kv";
-import { PrismaClient } from "@prisma/client";
 import { NextResponse } from "next/server";
 import { currentUser } from "@clerk/nextjs";
-
-const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
   const groupId = await req.json();
