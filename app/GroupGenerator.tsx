@@ -9,9 +9,17 @@ export const delay = (ms: number) => {
 };
 
 const handleClick = async (setRandomString: any) => {
-  await delay(1000); // upload to database instead of await
+  await delay(1000); // simulate network delay
   const randomString = uuidv4();
+
+  // Set random string in state
   setRandomString(randomString);
+
+  // Send a POST request to the Vercel KV REST API to store the random string
+  await fetch("/api/user", {
+    method: "POST",
+    body: JSON.stringify(randomString),
+  });
 };
 
 const GroupGenerator = () => {

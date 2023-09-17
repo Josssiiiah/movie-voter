@@ -5,6 +5,9 @@ import { Roboto_Slab } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs/app-beta";
 import Nav from "@/components/Nav";
 
+// Import client function into the body of the server function 
+// Pass in the response from the server to this funcction 
+
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto_Slab({ weight: "400", subsets: ["latin"] });
 
