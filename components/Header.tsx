@@ -6,11 +6,17 @@ import Container from "./ui/container";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Menu, Moon, ShoppingCart, Sun } from "lucide-react";
-import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
+import {
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
-import UserButton from "./ClerkUserButton";
+// import  UserButton from "./ClerkUserButton";
 
 const Header = () => {
+  //   const { theme, setTheme } = useTheme();
   const routes = [
     {
       href: "/",
@@ -37,7 +43,7 @@ const Header = () => {
           </div>
 
           <div className="fixed right-10">
-            <userButton />
+            {/* <userButton /> */}
             {/* <SignedIn>
            
               <UserButton
