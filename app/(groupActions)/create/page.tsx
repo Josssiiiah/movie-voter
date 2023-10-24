@@ -9,7 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-import GroupGenerator from "../GroupGenerator";
+import GroupGenerator from "../../(home)/GroupGenerator";
 
 export default async function create() {
   // This page will contain behavior to join a group
@@ -19,7 +19,7 @@ export default async function create() {
     <div>
       <div className="flex min-h-screen flex-col p-24">
         <Link href="/">
-          <Button variant="default" className="left-10 top-6 fixed">
+          <Button variant="default" className="left-10 top-1 fixed">
             Back
           </Button>
         </Link>
