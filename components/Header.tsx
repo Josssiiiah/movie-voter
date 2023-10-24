@@ -38,7 +38,7 @@ const Header = () => {
         <div className="relative px-4 sm:px-6 flex h-16 items-center justify-between w-full">
           <div className="flex items-center">
             <Link href="/" className="ml-4 lg:ml-0">
-              <h1 className="text-xl font-bold">Movie-Voter</h1>
+              <h1 className="text-xl font-bold">Washer-App</h1>
             </Link>
           </div>
 
